@@ -1,0 +1,31 @@
+@media (max-width: 579px){
+    .dropdown-menu{
+        margin-left: 65%;
+    }
+    header{
+        width: 100%;
+        height: 50vh;
+        background: url(https://us.knews.media/wp-content/uploads/2022/09/wednesday-jenna-ortega-social-featured.jpg);
+        background-size: cover;
+    }
+    .jumbotron{
+        position: absolute;
+        top: 80px;
+        color: white;
+    }
+    .top-text{
+        background-color: red;
+        font-size: 10px;
+        width: 90px;
+        padding: 0 10px;
+        border-radius: 5px;
+        margin-bottom: -5px;
+    }
+    .jumbotron h1{
+        font-size: 2em;
+    }
+    .desc{
+        text-shadow: 0 0 3px black;
+        font-size: 12px;
+    }
+}

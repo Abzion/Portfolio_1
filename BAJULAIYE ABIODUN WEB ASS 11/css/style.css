@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ebeef3;
+}
+header{
+    width: 100%;
+}
+.container-fluid {
+    padding: 0 50px;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.ia {
+
+    text-align: center;
+    font-family: lato;
+    font-size: 23px;
+    color: #e7400b;
+
+}
+.ib{
+    text-align: center;
+    font-family: lato;
+    font-size: 20px;
+    padding: 10px;   
+    color: #181818;
+    font-size: 23px;
+
+
+}
+.nav-item a {
+    color: #e7400b;
+    text-align: center;
+    font-family: lato;
+    font-size: 23px;
+    padding: 10px;
+}
+.nav-item a:hover {
+    background-color: #f54009;
+    color: #181818;
+    text-align: center;
+    font-family: lato;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.navbar-toggler{
+    color: black;
+    background-color: black;
+}
+
+.dropdown-menu a {
+    font-family: lato;
+    font-size: 20px;
+    padding: 10px;
+    color: #e7400b;
+
+}
+.drop {
+    font-family: lato;
+    font-size: 23px;
+    padding: 10px;
+    color: #e7400b;
+}
+.ads {
+    background-color: #ebeef3;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.brand img {
+    left: 10%;
+    top: 4%;
+    position: absolute;
+    
+}
+.brand-c {
+    position: absolute;
+    align-items: center;
+    width: 33%;
+    top: 14%;
+    left: 650px;
+}
+.brand-c .t {
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    font-family: lato;
+    letter-spacing: 2px;
+}
+.brand-c h1 {
+    width: 70%;
+    padding: 10px 0px 5px 0px; 
+    text-transform: uppercase;
+    color: #e7400b;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.brand-c p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 120px;
+}
+.b  {
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    color: #fff !important;
+    background-color: #e7400b;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+}
+section {
+    background-color: #fff;
+    height: 400px;
+}
+.adverts {
+    height: 400px;
+    position: absolute;
+    top: 79%;
+    left: 10%;
+
+}
+.advert {
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+.logo {
+    transition: all ease 0.5s;
+    height: 430px;
+    color: #fff;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    z-index: 99;
+}
+.logo img {
+    margin: 30px;
+    padding: 30px;
+    background-color: #ebeef3;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    align-items: center;
+    width: 27%;
+    
+}
+
+.advert h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Gill Sans' Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: narrower;
+    letter-spacing: -1px;
+}
+.c {
+    background-color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:#e7400b;
+    font-family: lato;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+}
+.advert p {
+    padding: 20px 20px;
+    text-align: center;
+}
+.logo1 {
+    background-color: #eb3a08;
+}
+.logo2 {
+    background-color: #fa6e00;
+}
+.logo3 {
+    background-color: #fa994a;
+}
