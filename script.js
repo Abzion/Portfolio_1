@@ -1,9 +1,63 @@
 
-$(document).ready(function() {
-    // $('.nav-button').click(function(){
-    //     $('.nav-button').toggleClass('change');
-    // });
+// function myFunction() {
+//         var x= document.getElementById("about-m");
+//         if (x.style.display === "none") {
+//             x.style.display = "block";
+//         } else {
+//             x.style.display = "none";
+//         }
 
+        
+// }
+
+// function myFunction1() {
+//     var x= document.getElementById("exp");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
+
+// function myFunction2() {
+//     var x= document.getElementById("skills");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
+// function myFunction3() {
+//     var x= document.getElementById("cert");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.nav-button').click(function(){
+        $('.nav-button').toggleClass('change');
+    });
+
+
+    // collapse links
 
     
 // my services
@@ -50,6 +104,8 @@ $(document).ready(function() {
      });
 
     //  project work
+
+    
 
     $(Window).scroll(function(){
         let position = $(this).scrollTop();

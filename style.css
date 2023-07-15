@@ -2,6 +2,7 @@
 body {
     font-family: 'roboto';
     background-color: #212125;
+   
   }
   a {
     text-decoration: none;
@@ -9,10 +10,16 @@ body {
   .color1 {
     color: #E8BF96;
   }
+  /* .header {
+    height: 10vh;
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/bg-0.png) no-repeat center center /cover;
+    
+    
+  } */
   /* header */
   header {
     
-    height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/Portfolio-bg.png) no-repeat center center /cover;
     
   }
@@ -139,7 +146,7 @@ body {
   .bg {
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 100px;
     align-content: center;
   }
   
@@ -183,6 +190,9 @@ body {
   .c-t {
     color: #E8BF96;
     font-weight: bold;
+  }
+  .cv {
+    margin-bottom: 40px;
   }
   .btn-abt {
     border: none;
@@ -367,7 +377,6 @@ body {
   color: #3b393621;
 } */
 .up {
-  margin-left: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,17 +400,7 @@ body {
   /* color: #2B2B2D; */
   color: #161615fa;
 }
-.top {
-  background-color: #33303000;
-  /* display: inline-block; */
-  /* padding-bottom: 30px;  */
-   /* margin-bottom: 10px; */
-   top: 70%;
-   left: 70%;
-   width: 30%;
-   position: fixed;
 
-}
 
 /* navbar styling */
 .navbar-toggler:focus {

@@ -13,9 +13,44 @@
     <title>Portfolio</title>
 </head>
 <body>
+  
      <!-- header -->
   <header>
-    <nav class=" container navbar navbar-custom  navbar-expand-lg fixed nav-menu">
+    <nav class="container navbar navbar-expand-lg fixed nav-menu">
+      <a class="navbar-brand m-2" href="index.html">
+        <img id="top" src="icons/logo1.svg" alt="" srcset="" width="50px">
+      </a>
+      <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class=" line1"></div>
+          <div class=" line2"></div>
+          <div class=" line3"></div>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item action">
+            <a href="index.html" class="nav-link m-2 menu-item nav-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#link-about" class="nav-link m-2 menu-item">About</a>
+          </li>
+  
+          <li class="nav-item">
+            <a href="#link-service" class="nav-link m-2 menu-item port-link">Services</a>
+          </li>
+  
+          <li class="nav-item">
+            <a href="#link-work" class="nav-link m-2 menu-item">Work</a>
+          </li>
+  
+          <li class="nav-item g banner-par1">
+            <a href="#link-contact" class="nav-link m-2 menu-item-b menu-items-b">LET'S TALK</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav class=" container navbar  navbar-expand-lg fixed nav-menu">
       <a href="#" class="navbar-brand text-light text-uppercase">
         <img id="top" src="icons/logo1.svg" alt="" srcset="" width="50px">
       </a>
@@ -24,30 +59,30 @@
         <div class=" line2"></div>
         <div class=" line3"></div>
       </button>
-      <div class="collapse navbar-collapse  justify-content-end " id="myNavbar">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link m-2 menu-item nav-active">Home</a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item action">
+            <a href="index.html" class="nav-link  menu-item nav-active">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a href="#link-about" class="nav-link m-2 menu-item">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#link-service" class="nav-link m-2 menu-item port-link">Services</a>
+            <a href="#link-about" class="nav-link  menu-item">About</a>
           </li>
 
           <li class="nav-item">
-            <a href="#link-work" class="nav-link m-2 menu-item">Work</a>
+            <a href="#link-service" class="nav-link  menu-item port-link">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#link-work" class="nav-link  menu-item">Work</a>
           </li>
 
           <li class="nav-item g banner-par1">
-            <a href="#link-contact" class="nav-link m-2 menu-item-b menu-items-b">LET'S TALK</a>
+            <a href="#link-contact" class="nav-link menu-item-b menu-items-b">LET'S TALK</a>
           </li>
         </ul>
       </div>
 
-    </nav>
+    </nav> -->
     <!-- banner -->
     <div class="bg container">
       <div class=" row">
@@ -91,9 +126,11 @@
               </li>
             </ul>
 
-            <a href="file_download/B.Abiodun1.pdf" download="">
+           <div class="cv">
+            <a href="file_download/B.Abiodun1.pdf" download="" class="cv">
               <button class="btn-abt menu-items-b banner-heading0" type="submit"><i class="fas fa-cloud-download-alt fa-1x icons "></i> Download CV</button>
             </a>
+           </div>
           
 
           </div>
@@ -102,7 +139,7 @@
           <!-- <img src="images/pix.png" alt="" srcset=""> -->
         
         <div class="col-lg-5 col-sm-5 col-md-7 banner-c banner-par0">
-          <p class="text-white">A Freelance Web developer based in Nigeria. I strives to build immersive and beautiful web sites through carefully crafted user-centric design.</p>
+          <p class="text-white">A Freelance Web developer based in Nigeria. I strives to build immersive and beautiful websites through carefully crafted user-centric design.</p>
   
         </div>
       </div>
@@ -120,16 +157,16 @@
       </div>
       <div class="container ">
         <div class="row align-items-center abt-t">
-          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt"  data-target="#about-me" id="link-about"><button>ABOUT ME</button></div>
-          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt"  data-target="#exp" ><a href="#exp"><button>EXPERIENCE</button></a></div>
-          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt"  data-target="#skills"><a href="#skills"><button>SKILLS</button></a></div>
-          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt"  data-target="#cert"><a href="#cert"><button>CERTIFICATION</button></a></div>
+          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt" data-toggle="collapse"  data-target="#about-m" id="link-about"><button onclick="myFunction()">ABOUT ME</button></div>
+          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt" data-toggle="collapse" data-target="#exp" ><button onclick="myFunction1()">EXPERIENCE</button></div>
+          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt" data-toggle="collapse" data-target="#skills"><button onclick="myFunction2()">SKILLS</button></div>
+          <div class="port-item col-lg-3 col-md-3 col-sm-6 abt" data-toggle="collapse" data-target="#cert"><button class="button1" onclick="myFunction3()">CERTIFICATION</button></div>
           
         </div>
         </div>
 
         <div class="container abt-m">
-          <div class="" id="about-me">
+          <div class="collapse" id="about-m">
             <div class="card card-body abt-mt">
             <div class="row">
               <div class="col-lg-7 col-md-5  col-sm-10">
@@ -161,8 +198,8 @@
 
   <!-- EXPERIENCES -->
   <section class=" mission">
-    <div class="container">
-      <div id="exp" class=" s-skill">
+    <div class=" container">
+      <div id="exp" class="collapse s-skill">
       
         <div class="card card-body  text-white">
           <div class="text-white">
@@ -252,7 +289,7 @@
 
   <!-- SKILLS -->
   <section class="container s-skill">
-    <div id="skills" class=" ">
+    <div id="skills" class="collapse ">
       
       <div class="card card-body py-5 text-white">
         <div class="text-white">
@@ -290,7 +327,7 @@
 
   <section class="my-5 ">
     <div class="container ">
-      <div id="cert" class="">
+      <div id="cert" class="collapse ski">
         <div class="card card-body py-5 text-white">
           <div class="text-white mb-5">
             <h1 class="color1 ">Certification<h1>
@@ -389,7 +426,7 @@
 
   </div>
   <div class="row">
-      <div class="col-lg-4 col-sm-10 mx-auto mb-5 anner-heading1">
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 anner-heading1">
           <div class="card">
               <img src="./images/4 1.png" class="card-img-top">
               <div class="card-body">
@@ -427,7 +464,7 @@
           </div>
       </div>
 
-      <div class="col-lg-4 col-sm-10 mx-auto mb-5 anner-heading1">
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 anner-heading1">
           <div class="card">
               <img src="./images/Frame 13.png" class="card-img-top">
               <div class="card-body">
@@ -463,7 +500,7 @@
               </div>
           </div>
       </div>
-      <div class="col-lg-4 col-sm-10 mx-auto mb-5 anner-heading1">
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 anner-heading1">
           <div class="card">
               <img src="./images/Frame 12.png" class="card-img-top">
               <div class="card-body">
@@ -502,7 +539,7 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-4 col-sm-10 mx-auto mb-5 er-par2">
+    <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 er-par2">
         <div class="card">
             <img src="./images/Frame 11.png" class="card-img-top">
             <div class="card-body">
@@ -538,7 +575,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-10 mx-auto mb-5 banner-par0">
+    <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 banner-par0">
         <div class="card">
             <img src="./images/Rectangle 49.png" class="card-img-top">
             <div class="card-body">
@@ -574,7 +611,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-10 mx-auto mb-5 er-par2">
+    <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 er-par2">
         <div class="card">
             <img src="./images/Rectangle 50.png" class="card-img-top">
             <div class="card-body">
@@ -614,6 +651,148 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- responsive work -->
+
+<section class="mission" id="link-work">
+  <div class="container p-2 p-sm-5">
+      <div class="col text-center mt-5  pb-4">
+          <h3 class=" color1">Responsive Work</h3>
+          <p class="lead text-light  ">These projects are responsive in different width device .</p>
+
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 anner-heading1">
+          <div class="card">
+              <img src="./images/Frame 15.png" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title r-heading1">
+                      <h4 class="text-white">PhotoX</h4>
+                  </div>
+                  <div class="card-subtitle r-heading1">
+                      <p class="lead text-white">Photo Colections </p>
+                  </div>
+                  <div class="text-left er-heading0">
+                    <ul class="bg-icon list-inline align-items-center">
+                      <li class="list-inline-item">
+                        <a href="https://abzion.github.io/PhotoX/" >
+                          <button class="btn-abt menu-items-b" type="submit">Click to view</button>
+                        </a>
+                      </li>
+        
+                      <li class="list-inline-item tw">
+                        <a href="#">
+                          <img class="" src="icons/tw.svg">
+                        </a>
+                      </li>
+        
+                      <li class="list-inline-item tw">
+                        <a href="#">
+                          <img src="icons/fb.svg">
+                        </a>
+                      </li>
+                      
+                    </ul>
+        
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 anner-heading1">
+          <div class="card">
+              <img src="./images/admin.jpeg" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title r-heading1">
+                      <h4 class="text-white">Dashboard</h4>
+                  </div>
+                  <div class="card-subtitle r-heading1">
+                      <p class="lead text-white">Admin Dashboard</p>
+                  </div>
+                  <div class="text-left er-heading0">
+                     <ul class="bg-icon list-inline align-items-center">
+                      <li class="list-inline-item">
+                        <a href="https://abzion.github.io/Admin/" >
+                          <button class="btn-abt menu-items-b" type="submit">Click to view</button>
+                        </a>
+                      </li>
+        
+                      <li class="list-inline-item tw">
+                        <a href="#">
+                          <img class="" src="icons/tw.svg">
+                        </a>
+                      </li>
+        
+                      <li class="list-inline-item tw">
+                        <a href="#">
+                          <img src="icons/fb.svg">
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      
+
+    <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5 er-par2">
+        <div class="card">
+            <img src="./images/Frame 14.png" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title r-heading1">
+                    <h4 class="text-white">Pure Boostrap</h4>
+                </div>
+                <div class="card-subtitle r-heading1">
+                    <p class="lead text-white">Practice Work</p>
+                </div>
+                <div class="text-left er-heading0">
+                  <ul class="bg-icon list-inline align-items-center">
+                    <li class="list-inline-item">
+                      <a href="https://abzion.github.io/Pure_boostrap/" >
+                        <button class="btn-abt menu-items-b" type="submit">Click to view</button>
+                      </a>
+                    </li>
+      
+                    <li class="list-inline-item tw">
+                      <a href="#">
+                        <img class="" src="icons/tw.svg">
+                      </a>
+                    </li>
+      
+                    <li class="list-inline-item tw">
+                      <a href="#">
+                        <img src="icons/fb.svg">
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+                
+            </div>
+        </div>
+    </div>
+    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- responsive work -->
+
+
 </section>
 
 
@@ -636,39 +815,30 @@
       <div class="col-lg-10">
         <form name="contact" action="" class="contact-form text-white " method="POST" data-netlify="true">
             <div class="row">
-              <div class="form-group col-lg-6 my-3 ">
-                <form name="contact" action="" method="POST" data-netlify="true">
-                  <label for="name" class="label">Name</label>
-                  <input type="text" name="" id="" class="form-control my-2 p-2 input" placeholder="Your name">
-                
-                </form>
 
-               
+              <div class="form-group col-lg-6 my-3 ">
+                  <label for="name" class="label">Name</label>
+                  <input type="text" name="name" id="" class="form-control my-2 p-2 input" placeholder="Your name">
               </div>
 
               <div class="form-group col-lg-6 my-3">
-                <form name="contact" action="" method="POST" data-netlify="true">
 
                 <label for="email" class="label">Email Address</label>
-                <input type="email" name="" id="" class="form-control my-2 p-2 input" placeholder="Your email">
-                </form>
+                <input type="email" name="email" id="" class="form-control my-2 p-2 input" placeholder="Your email">
               </div>
 
               <div class="form-group col-lg-6  my-3">
-                <form name="contact" action="" method="POST" data-netlify="true">
 
                 <label for="tel" class="label">Phone Number (Optional)</label>
-                <input type="tel" name="" id="" class="form-control my-2 p-2 input" placeholder="Your phone ">
-                </form>
+                <input type="tel" name="tel" id="" class="form-control my-2 p-2 input" placeholder="Your phone ">
               </div>
   
               <div class="form-group col-lg-6 my-3">
-                <form name="contact" action="" method="POST" data-netlify="true">
 
                 <label for="text class="label">Subject</label>
-                <input type="text" name="" id="" class="form-control my-2 p-2 input" placeholder="Your subject">
-                </form>
+                <input type="text" name="text" id="" class="form-control my-2 p-2 input" placeholder="Your subject">
               </div>
+
               <div class="form-group col-lg-12 my-3">
                <div class="row s-message">
                 <div class="col-lg-10">
@@ -676,11 +846,9 @@
                   <label for="text" class="label">Message</label>
                 </div>
                   <div class="col-lg-12">
-                    <form name="contact" action="" method="POST" data-netlify="true">
 
                     <textarea name="text" id="" cols="30" rows="10" placeholder="">Type your message here...</textarea>
                     <button class="btn-abt menu-items-b my-4" type="submit">Submit <span><i class="fas fa-arrow-right fa-1x icons "></i></span></button>
-                      </form>
                   </div>
                </div>
               </div>
@@ -691,23 +859,33 @@
       </div>
     </div>
   </div>
+
+  <!-- responisve work -->
+  
   
 </section>
+<!-- responsive work -->
 
-<section class="">
+
+<!-- <section class="">
   <div class="top d-flex justify-content-right">
     <div class=" up">
       <a href="#top"><i class="fas fa-arrow-up fa-1x icons arrow"></i></a>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
 <footer>
   <div class="mt-9">
     <div class="container">
-      <div class="text-center text-white mt-5">
+        <div class="top d-flex justify-content-center mt-3">
+          <div class=" up">
+            <a href="#top"><i class="fas fa-arrow-up fa-1x icons arrow"></i></a>
+          </div>
+        </div>
+      <div class="text-center text-white mt-2">
         <h5 class="pb-3 color1 fw-bold">Visit Me</h5>
       </div>
       <div class="d-flex justify-content-center">
@@ -744,13 +922,13 @@
   
 </footer>
 
-<!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
 <script src="typescripts.js"></script>
 <script src="script.js"></script>
 
-<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
